@@ -9,15 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>provider-payment8001</artifactId>
+    <artifactId>consumer-order80</artifactId>
 
     <dependencies>
-
-<!--        <dependency>&lt;!&ndash; 引用自己定义的api通用包，可以使用Payment支付Entity &ndash;&gt;-->
-<!--            <groupId>com.blossom.springcloud</groupId>-->
-<!--            <artifactId>cloud-api-commons</artifactId>-->
-<!--            <version>${project.version}</version>-->
-<!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -32,16 +26,6 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
 
-        <!--mysql-connector-java-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-        <!--jdbc-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -49,16 +33,14 @@
             <optional>true</optional>
         </dependency>
 
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
+
 
 </project>
