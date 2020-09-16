@@ -4,14 +4,15 @@ import com.blossom.springcloud.entity.CommonResult;
 import com.blossom.springcloud.entity.Payment;
 import com.blossom.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import javax.annotation.Resource;
 
 @RestController
 @Slf4j
 @SuppressWarnings("unchecked")
 public class PaymentController {
-    @Autowired
+    @Resource
     private PaymentService paymentService;
 
     @PostMapping("/payment/create")
