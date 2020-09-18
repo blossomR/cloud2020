@@ -11,6 +11,14 @@ spring:
     url: jdbc:mysql://localhost:3306/cloud2020?useUnicode=true&characterEncoding=utf8&useTimezone=true&serverTimezone=GMT%2B8&zeroDateTimeBehavior=convertToNull&useSSL=true
     username: root
     password: 1234
+
+eureka:
+  client:
+    register-with-eureka: true #是否将自己注册进 eurekservice-urlaServer，默认为true
+    fetch-registry: true #是否从 eurekaServer 抓取已有的注册信息，单节点无所谓，集群必须设置为true才能配合ribbon使用负载均衡
+    service-url: #设置eureka sever交互的地址查询服务都需要依赖这个地址
+      defaultZone: http://localhost:7001/eureka
+
 mybatis:
   mapper-locations: classpath*:mapper/*.xml
   type-aliases-package: com.blossom.springcloud.entity
