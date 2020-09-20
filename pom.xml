@@ -12,6 +12,7 @@
         <module>consumer-order80</module>
         <module>api-model</module>
         <module>eureka-server7001</module>
+        <module>eureka-server7002</module>
     </modules>
     <packaging>pom</packaging>
 
