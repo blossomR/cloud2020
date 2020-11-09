@@ -2,6 +2,7 @@ package com.blossom.springcloud.controller;
 
 import com.blossom.springcloud.entity.CommonResult;
 import com.blossom.springcloud.entity.Payment;
+import com.blossom.springcloud.service.FutureService;
 import com.blossom.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.UUID;
+import java.util.concurrent.CompletableFuture;
 
 @RestController
 @Slf4j
