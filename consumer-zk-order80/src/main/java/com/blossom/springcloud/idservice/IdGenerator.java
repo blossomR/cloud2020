@@ -1,7 +1,6 @@
 package com.blossom.springcloud.idservice;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import com.blossom.springcloud.config.IdUtil;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -12,8 +11,10 @@ public class IdGenerator {
     @Resource(name = "impl")
     private IdClient idClient;
 
-    public long idGen(){
-        return idClient.nextId();
+
+
+    public Long idGen(){
+        return IdUtil.nextId();
     }
 
 }

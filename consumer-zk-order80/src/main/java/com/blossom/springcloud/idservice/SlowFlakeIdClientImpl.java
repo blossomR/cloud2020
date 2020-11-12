@@ -66,7 +66,7 @@ class SlowFlakeIdClientImpl implements IdClient {
 
     // 这个是核心方法，通过调用nextId()方法，让当前这台机器上的snowflake算法程序生成一个全局唯一的id
     @Override
-    public synchronized Long nextId() {
+    public Long nextId() {
         // 这儿就是获取当前时间戳，单位是毫秒
         long timestamp = timeGen();
         if (timestamp < lastTimestamp) {
