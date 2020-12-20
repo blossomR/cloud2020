@@ -8,7 +8,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 
 @SpringBootApplication(exclude= {DataSourceAutoConfiguration.class})
-@RibbonClient(name = "PAYMENT-SERVICE",configuration = RibbonRuler.class)
+@RibbonClient(name = "provider-zk-payment-service",configuration = RibbonRuler.class)
 @EnableDiscoveryClient
 public class OrderZkMain80 {
 

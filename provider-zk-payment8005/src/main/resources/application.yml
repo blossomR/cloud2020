@@ -2,7 +2,7 @@ server:
   port: 8005
 spring:
   application:
-    name: provider-payment-service
+    name: provider-zk-payment-service
   datasource:
     # 当前数据源操作类型
     type: com.alibaba.druid.pool.DruidDataSource

@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient;
 
 @SpringBootApplication(exclude= {DataSourceAutoConfiguration.class})
 @EnableEurekaClient
-@RibbonClient(name = "PAYMENT-SERVICE",configuration = RibbonRuler.class)
+@RibbonClient(name = "provider-payment-service",configuration = RibbonRuler.class)
 public class OrderMain80 {
 
     public static void main(String[] args) {

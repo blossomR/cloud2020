@@ -15,7 +15,7 @@ import javax.annotation.Resource;
 public class OrderController {
 
     // zookeeper注册名
-    private static final String INVOKE_URL = "http://provider-payment-service";
+    private static final String INVOKE_URL = "http://provider-zk-payment-service";
 
     @Resource
     private RestTemplate restTemplate;
